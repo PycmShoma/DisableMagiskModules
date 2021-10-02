@@ -1,0 +1,17 @@
+#!/sbin/sh
+#
+FD=$2
+ui_print() {
+  echo -n -e "ui_print $1\n" > /proc/self/fd/$FD
+  echo -n -e "ui_print\n" > /proc/self/fd/$FD
+}
+#
+ui_print " "
+sleep 1
+ui_print "Find last Magisk module ..."
+FIND=`find /data/adb/modules/ -type d -maxdepth 1 |sort -nr |head -1`
+ui_print " "
+sleep 1
+ui_print "... and delete this"
+rm -rf $FIND
+ui_print " "
