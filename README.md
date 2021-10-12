@@ -11,3 +11,6 @@ You can do this manually. This script simplifies and automates this process. It 
 Each subsequent installation of the script will remove new modules one by one in descending order of installation time. Until the modules run out.
 
 Best regards! 
+
+### Link
+- https://github.com/PycmShoma/RemoveLastMagiskModule/releases 
