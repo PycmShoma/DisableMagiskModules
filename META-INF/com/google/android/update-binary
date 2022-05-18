@@ -9,9 +9,9 @@ ui_print() {
 ui_print " "
 sleep 1
 ui_print "Find last Magisk module ..."
-FIND=`find /data/adb/modules/ -type d -maxdepth 1 |sort -nr |head -1`
+TARGET=`ls -t /data/adb/modules/* sort -n | head -1 | sed 's/.$//'`
 ui_print " "
 sleep 1
 ui_print "... and delete this"
-rm -rf $FIND
+rm -rf $TARGET
 ui_print " "
