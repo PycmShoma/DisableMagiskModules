@@ -9,9 +9,11 @@ ui_print() {
 ui_print " "
 sleep 1
 ui_print "Find last Magisk module ..."
+sleep 1
+ui_print "Find last Magisk module ..."
 TARGET=`ls -t /data/adb/modules/* sort -n | head -1 | sed 's/.$//'`
 ui_print " "
 sleep 1
-ui_print "... and delete this"
-rm -rf $TARGET
+ui_print "... and disable this"
+touch $TARGET/disable
 ui_print " "
