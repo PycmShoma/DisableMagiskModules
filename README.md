@@ -1,18 +1,17 @@
-# RemoveLastModule
-TWRP script for disabling the last installed Magisk module
+# Description
+Scripts for flashing via custom recovery of your device.
 
-<font color="red">This script has been changed from RemoveLastModule to DisableLastModule</font> 
+The _ALL_ script disables all installed modules, the _LAST_ script disables the last installed module.
 
-## Description
-This is a script for installation via TWRP Recovery. If you have Orange Fox Recovery, use the built-in Magisk Manager.
+In the [release](https://github.com/PycmShoma/DisableMagiskModules/releases) attachment there is a version to disable the Magisk, KernelSU, APatch modules.
 
-If after installing the next Magisk module the device does not boot into the system, install this script. It will find the newest directory of modules and disable.
+## Magisk
+Original post on 4PDA forum here https://4pda.to/forum/index.php?showtopic=915158&view=findpost&p=109842829
 
-You can do this manually. This script simplifies and automates this process. It will not restore your system if the previous module permanently deleted system files. Please read the description and do Nandroid Backup before installing new unfamiliar modules.
+## KernelSU
+Original post on 4PDA forum here https://4pda.to/forum/index.php?showtopic=1067995&view=findpost&p=123869475
 
-Each subsequent installation of the script will remove new modules one by one in descending order of installation time. Until the modules run out.
+## APatch
+Original post on 4PDA forum here https://4pda.to/forum/index.php?showtopic=1082492&view=findpost&p=127601923
 
-Best regards! 
-
-### Link
-- https://github.com/PycmShoma/DisableLastModule/releases 
+Best regards!
